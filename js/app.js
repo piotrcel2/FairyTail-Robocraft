@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(){
     
     var mobileheaderbox = $('#mobileheaderbox');
+    var menubutton = $('#menubutton');
+    var navsmall = $('.navsmall');
     
     
     function match_media_with_listener() {
@@ -21,10 +23,16 @@ document.addEventListener("DOMContentLoaded", function(){
             } else {
                 
                 mobileheaderbox.addClass('setdisnone');
+                navsmall.addClass('setdisnone');
                 // DUŻE OKNO!!!!!
             }
         }
     }
+    
+    menubutton.on('click', function(){
+        
+        navsmall.toggleClass('setdisnone');
+    })
 
 
     match_media_with_listener();
