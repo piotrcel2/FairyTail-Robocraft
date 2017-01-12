@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(){
         
         images.addClass('setdisnone');
         
-        //images[imgindex].removeClass('setdisnone');
+        images[imgindex].removeClass('setdisnone');
         //dlaczego to nie działa to jeszcze nie rozgryzłem bo obiekt jest dobrze wyznaczony -_-
     }
     
