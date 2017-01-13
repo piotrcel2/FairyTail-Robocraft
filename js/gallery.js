@@ -17,8 +17,7 @@ document.addEventListener("DOMContentLoaded", function(){
         
         images.addClass('setdisnone');
         
-        images[imgindex].removeClass('setdisnone');
-        //dlaczego to nie działa to jeszcze nie rozgryzłem bo obiekt jest dobrze wyznaczony -_-
+        images[imgindex].classList.remove('setdisnone');
     }
     
     
@@ -41,6 +40,15 @@ document.addEventListener("DOMContentLoaded", function(){
         } else {
             imgindex += 1;
         }
+        
+        setimage();
+        
+    })
+    
+    littleimgs.on('click', function(){
+        console.log('elo');
+        
+        imgindex = this.dataset.picindex;
         
         setimage();
         
